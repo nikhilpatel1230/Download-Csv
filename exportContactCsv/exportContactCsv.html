@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Export Contact As Csv">
+        <lightning-datatable key-field="Id"
+                             columns={columns}
+                             data={data}
+                             >
+        </lightning-datatable>
+        <div class="slds-var-p-around_medium slds-align_absolute-center">
+            <lightning-button label="Export Csv" variant="brand" onclick={csvHandler} icon-name="utility:download" disabled={checkRecord} ></lightning-button>
+        </div>
+    </lightning-card>
+</template>
